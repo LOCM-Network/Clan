@@ -1,0 +1,42 @@
+database:
+  # The database type. "sqlite" and "mysql" are supported.
+  type: sqlite
+
+  # Edit these settings only if you choose "sqlite".
+  sqlite:
+    # The file name of the database in the plugin data folder.
+    # You can also put an absolute path here.
+    file: data.sqlite
+  # Edit these settings only if you choose "mysql".
+  mysql:
+    host: 127.0.0.1
+    # Avoid using the "root" user for security reasons.
+    username: root
+    password: ""
+    schema: your_schema
+  # The maximum number of simultaneous SQL queries
+  # Recommended: 1 for sqlite, 2 for MySQL. You may want to further increase this value if your MySQL connection is very slow.
+  worker-limit: 1
+
+language: "eng"
+
+# Notice message format. {message} will be replaced with the actual message.
+message-format: "§7[§cOpenClan§7] §f {message}"
+
+economy:
+  provider: bedrockeconomy
+
+# The maximum number of name clan player can create.
+max-clan-name-length: 15
+
+# The maximum number of name clan player can create.
+min-clan-name-length: 3
+
+# The maximum length of a clan tag.
+max-clan-tag-length: 3
+
+# Cost to create a clan.
+create-clan-price: 100000
+
+# time to save data to database (minute)
+save-interval: 60

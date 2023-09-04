@@ -1,0 +1,12 @@
+name: OpenClan
+version: 1.0.0
+main: phuongaz\openclan\OpenClan
+api: 5.0.0
+depend: [BedrockEconomy]
+author: phuongaz
+src-namespace-prefix: phuongaz\openclan
+
+permissions:
+  clan.command:
+    description: Allows users to use clan command
+    default: true
